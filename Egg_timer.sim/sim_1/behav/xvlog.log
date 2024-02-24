@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/Lab 9/Egg_timer/Egg_timer.srcs/sim_1/new/debounce_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

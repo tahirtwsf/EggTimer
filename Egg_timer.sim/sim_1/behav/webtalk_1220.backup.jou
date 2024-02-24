@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Dec 08 20:05:07 2023
+# Process ID: 1220
+# Current directory: U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/behav/xsim.dir/debounce_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/behav/webtalk.log
+# Journal file: U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source U:/Lab -notrace

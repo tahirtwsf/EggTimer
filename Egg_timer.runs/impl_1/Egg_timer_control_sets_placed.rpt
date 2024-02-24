@@ -1,0 +1,83 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Fri Dec 08 18:30:01 2023
+| Host         : me4166-14 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Egg_timer_control_sets_placed.rpt
+| Design       : Egg_timer
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    72 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           25 |
+| No           | No                    | Yes                    |              51 |           17 |
+| No           | Yes                   | No                     |              20 |            5 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              65 |           22 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+-----------------------------+-----------------------------+------------------+----------------+
+|        Clock Signal        |        Enable Signal        |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------------------+-----------------------------+-----------------------------+------------------+----------------+
+|  start_db/start_pulse_OBUF |                             |                             |                1 |              1 |
+|  myClock/inst/clk_out1     | clk1/clk_n1hz_i_1_n_0       | clk_r_IBUF                  |                1 |              1 |
+|  clk1/clk_s_OBUF           |                             | down/min0_out[3]_i_1__0_n_0 |                1 |              4 |
+|  clk1/clk_s_OBUF           | down/min1_out[3]_i_1_n_0    | down/min0_out[3]_i_1__0_n_0 |                2 |              4 |
+|  clk1/clk_s_OBUF           | down/sec0_out[3]_i_1__0_n_0 |                             |                2 |              4 |
+|  scroll_text/tick_signal   |                             | reset_IBUF                  |                2 |              4 |
+|  clk_BUFG                  | up/min0_out[3]_i_2_n_0      | up/min0_out[3]_i_1_n_0      |                2 |              4 |
+|  clk_BUFG                  | up/min1_out[3]_i_2_n_0      | up/clear                    |                1 |              4 |
+|  clk_BUFG                  | up/sec1_out[3]_i_2_n_0      | up/sec1_out[3]_i_1_n_0      |                2 |              4 |
+|  clk_BUFG                  | minutes_db/E[0]             | up/sec0_out[3]_i_1_n_0      |                2 |              4 |
+|  clk_BUFG                  | start_db/start_pulse_OBUF   |                             |                1 |              4 |
+|  myClock/inst/clk_out1     |                             | down/AN_reg[4]              |                1 |              4 |
+|  clk1/clk_s_OBUF           |                             |                             |                5 |              5 |
+|  clk_BUFG                  |                             | reset_IBUF                  |                3 |             12 |
+|  myClock/inst/clk_out1     |                             |                             |               10 |             15 |
+|  clk_BUFG                  |                             |                             |                9 |             27 |
+|  myClock/inst/clk_out1     | clk_en_IBUF                 | clk_r_IBUF                  |               12 |             44 |
+|  CLK100MHZ_IBUF_BUFG       |                             | reset_IBUF                  |               15 |             47 |
++----------------------------+-----------------------------+-----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                    10 |
+| 5      |                     1 |
+| 12     |                     1 |
+| 15     |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

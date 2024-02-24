@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Dec 08 18:28:56 2023
+# Process ID: 3668
+# Current directory: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1
+# Command line: vivado.exe -log Egg_timer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Egg_timer.tcl
+# Log file: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/Egg_timer.vds
+# Journal file: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Egg_timer.tcl -notrace

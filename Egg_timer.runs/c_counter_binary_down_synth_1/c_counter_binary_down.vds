@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 02 19:02:16 2023
+# Process ID: 8660
+# Current directory: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_down_synth_1
+# Command line: vivado.exe -log c_counter_binary_down.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_down.tcl
+# Log file: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_down_synth_1/c_counter_binary_down.vds
+# Journal file: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_down_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_counter_binary_down.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP c_counter_binary_down, cache-ID = 301ffe141c3acc6b.

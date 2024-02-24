@@ -1,0 +1,477 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Dec 08 18:28:56 2023
+# Process ID: 3668
+# Current directory: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1
+# Command line: vivado.exe -log Egg_timer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Egg_timer.tcl
+# Log file: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/Egg_timer.vds
+# Journal file: U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Egg_timer.tcl -notrace
+Command: synth_design -top Egg_timer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12508 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 390.879 ; gain = 180.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Egg_timer' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_1_sec' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:23]
+WARNING: [Synth 8-567] referenced signal 'counter1khz' should be on the sensitivity list [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:126]
+WARNING: [Synth 8-567] referenced signal 'clk_1khz' should be on the sensitivity list [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:126]
+INFO: [Synth 8-4471] merging register 'clk_500_on_reg' into 'clk_1hz_on_reg' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:95]
+INFO: [Synth 8-256] done synthesizing module 'clk_1_sec' (2#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/debounce.v:23]
+WARNING: [Synth 8-350] instance 'start_db' of module 'debounce' requires 5 connections, but only 4 given [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:91]
+WARNING: [Synth 8-350] instance 'minutes_db' of module 'debounce' requires 5 connections, but only 4 given [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:98]
+WARNING: [Synth 8-350] instance 'seconds_db' of module 'debounce' requires 5 connections, but only 4 given [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:104]
+WARNING: [Synth 8-350] instance 'cook_time_db' of module 'debounce' requires 5 connections, but only 4 given [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:111]
+INFO: [Synth 8-638] synthesizing module 'Up_pulse' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Up_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'digit_display' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/bcdto7segment_display.v:22]
+	Parameter s0 bound to: 8'b11111110 
+	Parameter s1 bound to: 8'b11111101 
+	Parameter m0 bound to: 8'b11111011 
+	Parameter m1 bound to: 8'b11110111 
+INFO: [Synth 8-226] default block is never used [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/bcdto7segment_display.v:55]
+INFO: [Synth 8-256] done synthesizing module 'digit_display' (4#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/bcdto7segment_display.v:22]
+INFO: [Synth 8-638] synthesizing module 'bcdto7segment_dataflow' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/bcdto7segment_dataflow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcdto7segment_dataflow' (5#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/bcdto7segment_dataflow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Up_pulse' (6#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Up_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'count_down' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/count_down.v:23]
+WARNING: [Synth 8-3848] Net checker in module/entity count_down does not have driver. [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/count_down.v:39]
+INFO: [Synth 8-256] done synthesizing module 'count_down' (7#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/count_down.v:23]
+WARNING: [Synth 8-350] instance 'down' of module 'count_down' requires 18 connections, but only 16 given [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:142]
+INFO: [Synth 8-638] synthesizing module 'dynamic_display' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/dynamic_display.v:22]
+	Parameter BITS bound to: 17 - type: integer 
+WARNING: [Synth 8-151] case item 7'b0000110 is unreachable [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/dynamic_display.v:110]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_display' (8#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/imports/new/dynamic_display.v:22]
+INFO: [Synth 8-226] default block is never used [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:233]
+WARNING: [Synth 8-3848] Net count_on in module/entity Egg_timer does not have driver. [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:36]
+INFO: [Synth 8-256] done synthesizing module 'Egg_timer' (9#1) [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:23]
+WARNING: [Synth 8-3331] design count_down has unconnected port checker
+WARNING: [Synth 8-3331] design count_down has unconnected port clk_5MHZ
+WARNING: [Synth 8-3331] design Up_pulse has unconnected port clk_s
+WARNING: [Synth 8-3331] design Up_pulse has unconnected port clk_5MHZ
+WARNING: [Synth 8-3331] design Up_pulse has unconnected port clk_100hz
+WARNING: [Synth 8-3331] design clk_1_sec has unconnected port clk_100MHZ
+WARNING: [Synth 8-3331] design Egg_timer has unconnected port count_on
+WARNING: [Synth 8-3331] design Egg_timer has unconnected port timer_count
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 428.375 ; gain = 218.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 428.375 ; gain = 218.301
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'myClock' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/Egg_timer.v:73]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/dcp/clk_wiz_0_in_context.xdc] for cell 'myClock'
+Finished Parsing XDC File [U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/dcp/clk_wiz_0_in_context.xdc] for cell 'myClock'
+Parsing XDC File [U:/Lab 9/Egg_timer/Egg_timer.srcs/constrs_1/imports/Egg_timer/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [U:/Lab 9/Egg_timer/Egg_timer.srcs/constrs_1/imports/Egg_timer/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [U:/Lab 9/Egg_timer/Egg_timer.srcs/constrs_1/imports/Egg_timer/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Egg_timer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Egg_timer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 744.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/dcp/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/.Xil/Vivado-3668-me4166-14/dcp/clk_wiz_0_in_context.xdc}, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_1hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_500hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_100hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "display_pattern" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "tick_signal" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'clk_1khz_reg' [U:/Lab 9/Egg_timer/Egg_timer.srcs/sources_1/new/clk_1_sec.v:131]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 26    
+	   5 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Egg_timer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_1_sec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module digit_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Up_pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 9     
+Module count_down 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 15    
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module dynamic_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk1/clk_1hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1/clk_100hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1/clk_500hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1/clk_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "scroll_text/tick_signal" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Egg_timer has unconnected port count_on
+WARNING: [Synth 8-3331] design Egg_timer has unconnected port timer_count
+INFO: [Synth 8-3886] merging instance 'down/up_down_display/AN_reg[4]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'up/timer_display/AN_reg[4]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'down/up_down_display/AN_reg[5]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'up/timer_display/AN_reg[5]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'down/up_down_display/AN_reg[6]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'up/timer_display/AN_reg[6]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3886] merging instance 'down/up_down_display/AN_reg[7]' (FD) to 'up/timer_display/AN_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\up/timer_display/AN_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (clk1/clk_1khz_reg) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[23]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[22]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[21]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[20]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[19]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[18]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[17]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[16]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[15]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[14]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[13]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[12]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[11]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[10]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[9]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[8]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[7]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[6]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[5]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[4]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[3]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[2]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[1]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (clk1/counter100_reg[0]) is unused and will be removed from module Egg_timer.
+WARNING: [Synth 8-3332] Sequential element (up/timer_display/AN_reg[7]) is unused and will be removed from module Egg_timer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'myClock/clk_out1' to pin 'myClock/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    24|
+|4     |LUT1      |    95|
+|5     |LUT2      |    70|
+|6     |LUT3      |    15|
+|7     |LUT4      |    37|
+|8     |LUT5      |    44|
+|9     |LUT6      |    60|
+|10    |FDCE      |    51|
+|11    |FDRE      |   133|
+|12    |FDSE      |     5|
+|13    |IBUF      |     9|
+|14    |OBUF      |    24|
+|15    |OBUFT     |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   571|
+|2     |  clk1              |clk_1_sec       |   161|
+|3     |  cook_time_db      |debounce        |     5|
+|4     |  down              |count_down      |    94|
+|5     |    up_down_display |digit_display_3 |    33|
+|6     |  minutes_db        |debounce_0      |     7|
+|7     |  scroll_text       |dynamic_display |   162|
+|8     |  seconds_db        |debounce_1      |     5|
+|9     |  start_db          |debounce_2      |     5|
+|10    |  up                |Up_pulse        |    77|
+|11    |    timer_display   |digit_display   |    27|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 744.074 ; gain = 111.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 744.074 ; gain = 534.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 744.074 ; gain = 430.066
+INFO: [Common 17-1381] The checkpoint 'U:/Lab 9/Egg_timer/Egg_timer.runs/synth_1/Egg_timer.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 744.074 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 08 18:29:28 2023...

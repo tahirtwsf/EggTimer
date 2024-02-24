@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/Lab 9/Egg_timer/Egg_timer.sim/sim_1/synth/func/Egg_timer_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Egg_timer
+INFO: [VRFC 10-311] analyzing module Up_pulse
+INFO: [VRFC 10-311] analyzing module clk_1_sec
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module count_down
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-311] analyzing module debounce_0
+INFO: [VRFC 10-311] analyzing module debounce_1
+INFO: [VRFC 10-311] analyzing module debounce_2
+INFO: [VRFC 10-311] analyzing module digit_display
+INFO: [VRFC 10-311] analyzing module digit_display_3
+INFO: [VRFC 10-311] analyzing module dynamic_display
+INFO: [VRFC 10-311] analyzing module glbl

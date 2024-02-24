@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file U:\Lab 9\Egg_timer\Egg_timer.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

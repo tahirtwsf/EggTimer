@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Dec 06 11:28:39 2023
+# Process ID: 11436
+# Current directory: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_0_synth_1
+# Command line: vivado.exe -log c_counter_binary_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_0.tcl
+# Log file: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_0_synth_1/c_counter_binary_0.vds
+# Journal file: U:/Lab 9/Egg_timer/Egg_timer.runs/c_counter_binary_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_counter_binary_0.tcl -notrace
