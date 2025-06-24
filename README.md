@@ -1,4 +1,4 @@
-# Eggs_Timer
+# FGPA EggTimer
 The following report explains the development and implementation of an egg timer programmed on the
 Digilent Nexys A7-100T FPGA Trainer Board. The project was programmed in Verilog on the Vivado
 Design Suite. The main purpose was to program a functional timer for cooking an Egg on the Nexys
